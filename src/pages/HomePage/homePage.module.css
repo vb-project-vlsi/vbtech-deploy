@@ -1,66 +1,3 @@
-<<<<<<< HEAD
-.homePage {
-  position: relative;
-  height: 100vh;
-  overflow: hidden; /* Prevents overflow from the video */
-}
-
-.backgroundVideo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the video covers the container */
-  z-index: -2; /* Places the video behind other elements */
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay */
-  z-index: -1; /* Places the overlay above the video but below the content */
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column; /* Stacks items vertically */
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: #fff;
-}
-
-.fadeText {
-  animation: fadeIn 4s;
-  color: #fff;
-  text-align: center;
-}
-
-h1.fadeText {
-  font-size: 65px;
-  margin-bottom: 10px; /* Space between h1 and h6 */
-}
-
-h5.fadeText {
-  font-size: 35px; /* Increased font size for h5 */
-  margin: 0; /* Remove default margin */
-}
-
-@keyframes fadeIn {
-  0%, 100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-=======
 /* HomePage container */
 .homePage {
   position: relative;
@@ -152,4 +89,3 @@ h5.fadeText {
     font-size: 20px; /* Further reduced font size for small devices */
   }
 }
->>>>>>> 79c38e14c949436889d06f9ad9e81f95fe38252f
