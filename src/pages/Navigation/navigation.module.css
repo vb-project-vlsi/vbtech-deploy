@@ -7,14 +7,16 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
   backdrop-filter: blur(10px); /* Apply blur effect */
-  padding: 20px 20px;
+  padding: 15px 20px; /* Reduce padding to decrease height */
   color: #fff;
   z-index: 1000; /* Ensure the navbar is above other elements */
   font-family: 'Times New Roman', Times, serif;
 }
 
 .navbarBrand {
-  font-size: 24px;
+  width: 150px; /* Adjusted width */
+  height: 40px; /* Adjusted height */
+  background-color: #ddd;
 }
 
 .menuIcon {
@@ -102,7 +104,7 @@
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 30px;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8); /* Dark background for mobile menu */
   }

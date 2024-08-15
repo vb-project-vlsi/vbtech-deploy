@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom'; // useNavigate hook
 import styles from './navigation.module.css';
+import Logo from '../../assets/vbTechLogo-1.png';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.navbarBrand}>VIBHUAYA LOGO</div>
+      <img src={Logo} className={styles.navbarBrand} alt='VIBHUAYA LOGO'/>
       <FontAwesomeIcon
         icon={faBars}
         className={styles.menuIcon}

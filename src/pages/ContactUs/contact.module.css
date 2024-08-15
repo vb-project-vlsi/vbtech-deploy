@@ -19,7 +19,7 @@
 
 .image {
   width: 100%;
-  max-width: 700px; /* Adjust based on your design */
+  max-width: 500px; /* Adjust based on your design */
   height: auto;
   max-height: 400px;
   border-radius: 8px; /* Optional: adds rounded corners to the image */
