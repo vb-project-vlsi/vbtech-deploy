@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
   position: relative;
   padding: 2rem;
@@ -117,3 +118,124 @@
     height: auto;
   }
 }
+=======
+.container {
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden; /* Ensure the background doesn't overflow */
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/usservice2-transformed.jpeg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Ensure the background doesn't repeat */
+  filter: brightness(30%); /* Decrease the brightness */
+  z-index: -1; /* Place the background behind everything else */
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  position: relative; /* Ensure the text is above the background */
+  z-index: 1;
+}
+
+.serviceEven, .serviceOdd {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative; /* Ensure the content is above the background */
+  z-index: 1;
+}
+
+.serviceEven {
+  flex-direction: row;
+}
+
+.serviceOdd {
+  flex-direction: row-reverse;
+}
+
+.image {
+  width: 300px;
+  height: 250px;
+  margin: 1rem;
+  border: 0.5px solid grey;
+  border-radius: 24px;
+}
+
+.imageContainer {
+  z-index: 1;
+}
+
+.text {
+  max-width: 600px;
+  text-align: left;
+  opacity: 0; /* Initially hidden */
+  animation-duration: 1.5s; /* Slow down the animation */
+  animation-fill-mode: forwards; /* Maintain the final state */
+  color: white;
+}
+
+.text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* Keyframes for animations */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations to text based on the parent class */
+.slideInFromLeft {
+  animation-name: slideInFromLeft;
+}
+
+.slideInFromRight {
+  animation-name: slideInFromRight;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .serviceEven, .serviceOdd {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
+>>>>>>> 79c38e14c949436889d06f9ad9e81f95fe38252f

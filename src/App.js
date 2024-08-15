@@ -4,7 +4,10 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs/ContactUs';
 import HomePage from './pages/HomePage/HomePage';
 import Navbar from './pages/Navigation/Navigation';
+<<<<<<< HEAD
 import OurTeam from './pages/OurTeam/OurTeam';
+=======
+>>>>>>> 79c38e14c949436889d06f9ad9e81f95fe38252f
 import Services from './pages/Services/Services';
 import USAServices from './pages/USAServices/USAServices';
 import { BrowserRouter as Router, Route, Routes, useLocation, useNavigate } from 'react-router-dom';

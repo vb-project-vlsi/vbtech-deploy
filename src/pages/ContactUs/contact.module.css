@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
   display: flex;
   width: 100%;
@@ -89,3 +90,164 @@
 .linkedin {
   color: #0077B5;
 }
+=======
+.container {
+  display: flex;
+  flex-direction: row; /* Side by side on larger screens */
+  width: 100%;
+  background: linear-gradient(to top, #1d345c, #112448);
+  color: #fff; /* Text color */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.imageSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.image {
+  width: 100%;
+  max-width: 700px; /* Adjust based on your design */
+  height: auto;
+  max-height: 400px;
+  border-radius: 8px; /* Optional: adds rounded corners to the image */
+}
+
+.contactSection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.icon {
+  font-size: 24px;
+  color: #333;
+}
+
+.text {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 20px;
+}
+
+.socialIcon {
+  font-size: 24px;
+  transition: opacity 0.3s;
+  text-decoration: none; /* Removes underline */
+}
+
+.socialIcon:hover {
+  opacity: 0.7;
+}
+
+.instagram {
+  color: #E1306C;
+}
+
+.facebook {
+  color: #1877F2;
+}
+
+.twitter {
+  color: #1DA1F2;
+}
+
+.linkedin {
+  color: #0077B5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: row; /* Ensure side-by-side layout on larger tablets */
+  }
+
+  .heading {
+    font-size: 1.75rem; /* Adjust font size for medium screens */
+  }
+
+  .contactInfo {
+    margin-bottom: 15px;
+  }
+
+  .text {
+    font-size: 17px; /* Slightly smaller text for medium screens */
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column; /* Stack side-by-side items vertically on smaller screens */
+  }
+
+  .imageSection {
+    padding-right: 0; /* Remove padding on small screens */
+    margin-bottom: 20px; /* Add space below image on small screens */
+  }
+
+  .image {
+    max-height: 250px; /* Adjust height for medium screens */
+  }
+
+  .heading {
+    font-size: 1.5rem; /* Smaller font size on smaller screens */
+  }
+
+  .text {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .socialMedia {
+    gap: 15px; /* Reduced gap between icons for smaller screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .image {
+    max-height: 200px; /* Further reduce height for small screens */
+  }
+
+  .heading {
+    font-size: 1.25rem; /* Smaller font size for small screens */
+  }
+
+  .text {
+    font-size: 14px; /* Smaller font size for small screens */
+  }
+
+  .socialMedia {
+    gap: 10px; /* Further reduced gap between icons */
+  }
+
+  .socialIcon {
+    font-size: 20px; /* Smaller icon size for small screens */
+  }
+}
+>>>>>>> 79c38e14c949436889d06f9ad9e81f95fe38252f

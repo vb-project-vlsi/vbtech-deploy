@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .navbar {
   position: fixed; /* Make the navbar fixed */
   top: 0;
@@ -117,3 +118,153 @@
 .chevronIcon {
   margin-left: 8px;
 }
+=======
+.navbar {
+  position: fixed; /* Make the navbar fixed */
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  padding: 20px 20px;
+  color: #fff;
+  z-index: 1000; /* Ensure the navbar is above other elements */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbarBrand {
+  font-size: 24px;
+}
+
+.menuIcon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 60px; /* Add margin to create space on the right side */
+}
+
+.navLinks li {
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #ddd;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  background: linear-gradient(to bottom, #1d345c, #112448);
+  min-width: 300px;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  list-style: none; /* Remove dots from the dropdown menu */
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown.open .dropdownMenu {
+  display: block;
+}
+
+.dropdownItem {
+  padding: 0;
+}
+
+.flagIcon {
+  margin-right: 8px; 
+  width: 24px; 
+  height: auto; 
+}
+
+.dropdownItem .navLink {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1rem;
+}
+
+.chevronIcon {
+  margin-left: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+    margin-right: 40px;
+  }
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for mobile menu */
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+
+  .navLinks li {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navLink {
+    font-size: 20px;
+  }
+
+  .dropdownMenu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .dropdownItem {
+    width: 100%;
+  }
+
+  .dropdownItem .navLink {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarBrand {
+    font-size: 20px;
+  }
+
+  .navLink {
+    font-size: 18px;
+  }
+}
+
+>>>>>>> 79c38e14c949436889d06f9ad9e81f95fe38252f

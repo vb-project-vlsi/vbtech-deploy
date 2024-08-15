@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* about.module.css */
 .container {
   position: relative;
@@ -62,3 +63,152 @@
 .paragraph:nth-of-type(2) {
   margin-top: 20px; /* Space at the beginning of the second paragraph */
 }
+=======
+/* Container for the entire component */
+.container {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #1d345c, #112448);
+}
+
+/* Styling for the About Us section */
+.aboutUs {
+  padding: 20px;
+  width: 80%;
+  max-width: 100%;
+  margin: 0 auto;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Positioning content within the About Us section */
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Styling for the heading */
+.heading {
+  text-align: center;
+  color: rgb(251, 251, 251);
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Initial state for paragraphs (hidden) */
+.hidden {
+  opacity: 0;
+  transform: translateX(3%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Visible state for paragraphs (when scrolled into view) */
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Styling for paragraphs within blockquotes */
+.paragraph {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  font-style: italic;
+  color: rgb(248, 242, 242);
+  position: relative;
+  padding: 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Delay for the second paragraph's appearance */
+.delay {
+  transition-delay: 0.5s;
+}
+
+/* Spacing between the first and second paragraphs */
+.paragraph:first-of-type {
+  margin-bottom: 20px;
+}
+
+.paragraph:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+/* Styling for blockquotes */
+blockquote {
+  font-family: Georgia, serif;
+  position: relative;
+  margin: 0.5em;
+  padding: 0.5em 2em 0.5em 3em;
+  color: rgb(248, 242, 242);
+}
+
+/* Large quotation mark before the blockquote */
+blockquote:before {
+  font-family: Georgia, serif;
+  position: absolute;
+  font-size: 6em;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  content: "\201C";
+}
+
+/* Large quotation mark after the blockquote */
+blockquote:after {
+  font-family: Georgia, serif;
+  position: absolute;
+  font-size: 6em;
+  line-height: 1;
+  right: 0;
+  bottom: -0.5em;
+  content: "\201D";
+}
+
+/* Footer for blockquote citations (optional) */
+blockquote footer {
+  padding: 0 2em 0 0;
+  text-align: right;
+}
+
+/* Citation before the footer (optional) */
+blockquote cite:before {
+  content: "\2013";
+}
+
+/* Media query for small screens (mobile devices) */
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding-top: 10px;
+  }
+
+  .aboutUs {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  blockquote {
+    padding: 0.5em 1em 0.5em 1.5em;
+  }
+
+  blockquote:before,
+  blockquote:after {
+    font-size: 4em;
+  }
+}
+>>>>>>> 79c38e14c949436889d06f9ad9e81f95fe38252f

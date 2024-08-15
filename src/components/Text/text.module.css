@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* text.module.css */
 .textContainer {
   text-align: center;
@@ -9,3 +10,16 @@
   font-size: 12px;
   color: #333;
 }
+=======
+/* text.module.css */
+.textContainer {
+  text-align: center;
+  padding: 10px;
+}
+
+.content {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #333;
+}
+>>>>>>> 79c38e14c949436889d06f9ad9e81f95fe38252f
