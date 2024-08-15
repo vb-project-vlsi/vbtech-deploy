@@ -50,7 +50,7 @@
 
 /* Styling for the main heading */
 h1.fadeText {
-  font-size: 80px; /* Increased font size for h1 */
+  font-size: 65px; /* Increased font size for h1 */
   margin-bottom: 10px;
   line-height: 1.2; /* Adjust line-height if needed for better spacing */
 }
