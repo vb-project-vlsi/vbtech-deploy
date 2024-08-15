@@ -35,7 +35,7 @@ const ContactUs = () => {
                         <RoundContainer backgroundColor="#f0f0f0">
                             <FaMapMarkerAlt className={styles.icon} />
                         </RoundContainer>
-                        <span className={styles.text}><strong>HYDERABAD OFFICE :</strong> T-Hub Foundation ,Plot No 1/C, Sy No.83/1,Hyderabad Knowledge City, Raidurgam, Place of Supply: Telangana ,Hyderabad, 500081.</span>
+                        <span className={styles.text}><strong>HYDERABAD OFFICE :</strong> T-Hub Foundation ,Plot No 1/C, Sy No.83/1,Hyderabad Knowledge City, Raidurgam, Telangana ,Hyderabad, 500081.</span>
                     </div>
                 </div>
                 <div className={styles.socialMedia}>
