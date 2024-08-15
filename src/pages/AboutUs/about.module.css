@@ -1,7 +1,8 @@
 /* Container for the entire component */
 .container {
   position: relative;
-  height: 80vh;
+  height: auto;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
