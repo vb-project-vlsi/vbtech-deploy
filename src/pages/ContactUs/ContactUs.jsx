@@ -25,17 +25,19 @@ const ContactUs = () => {
                         </RoundContainer>
                         <span className={styles.text}>info@vibhuayatechnologies.com</span>
                     </div>
-                    <div className={styles.infoItem}>
-                        <RoundContainer backgroundColor="#f0f0f0">
-                            <FaMapMarkerAlt className={styles.icon} />
-                        </RoundContainer>
-                        <span className={styles.text}><strong>US OFFICE :</strong> 3524 SILVERSIDE RD STE 35B WILMINGTON, DE 19810-4929-520.</span>
-                    </div>
-                    <div className={styles.infoItem}>
-                        <RoundContainer backgroundColor="#f0f0f0">
-                            <FaMapMarkerAlt className={styles.icon} />
-                        </RoundContainer>
-                        <span className={styles.text}><strong>HYDERABAD OFFICE :</strong> T-Hub Foundation ,Plot No 1/C, Sy No.83/1,Hyderabad Knowledge City, Raidurgam, Telangana ,Hyderabad, 500081.</span>
+                    <div className={styles.addressContainer}>
+                        <div className={styles.infoItem}>
+                            <RoundContainer backgroundColor="#f0f0f0">
+                                <FaMapMarkerAlt className={styles.icon} />
+                            </RoundContainer>
+                            <span className={styles.text}><strong>US OFFICE :</strong><br/> <span>3524 SILVERSIDE RD STE 35B WILMINGTON,<br/> DE 19810-4929-520.</span></span>
+                        </div>
+                        <div className={styles.infoItem}>
+                            <RoundContainer backgroundColor="#f0f0f0">
+                                <FaMapMarkerAlt className={styles.icon} />
+                            </RoundContainer>
+                            <span className={styles.text}><strong>HYDERABAD OFFICE :</strong><br/> <span>T-Hub Foundation, Plot No 1/C,<br/> Sy No.83/1, Hyderabad Knowledge City,<br/> Raidurgam, Telangana, <br/>Hyderabad, 500081.</span></span>
+                        </div>
                     </div>
                 </div>
                 <div className={styles.socialMedia}>

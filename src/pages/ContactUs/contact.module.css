@@ -44,12 +44,6 @@
   margin-bottom: 20px;
 }
 
-.infoItem {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-}
-
 .icon {
   font-size: 24px;
   color: #333;
@@ -58,6 +52,7 @@
 .text {
   font-size: 18px;
   margin-left: 10px;
+  letter-spacing: 0.5px; 
 }
 
 .socialMedia {
@@ -158,3 +153,23 @@
     font-size: 20px; /* Smaller icon size for small screens */
   }
 }
+
+.addressContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  .addressContainer {
+    flex-direction: column;
+  }
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  flex: 1; /* Ensure the items can grow and shrink */
+}
+
