@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './homePage.module.css';
-import BackgroundVideo from '../../assets/VideoPlayBack.mp4'; // Path to your video file
+import BackgroundVideo from '../../assets/videoplayback.mp4'; // Path to your video file
 
 const HomePage = () => {
   return (
