@@ -3,11 +3,11 @@ import Text from '../../components/Text/Text';
 import Card from '../../components/Card/Card';
 import Dialog from '../../components/Dialog/Dialog'; // Adjust the import path accordingly
 import styles from './services.module.css';
-import RTLImage from '../../assets/RTLImage.jpeg';
-import DesignVerification from '../../assets/DesignVerification.jpeg';
-import DFTImage from '../../assets/Testability.jpeg';
-import PhysicalDesignImage from '../../assets/physicalDesign.jpeg';
-import PostSilicon from '../../assets/postSilicon.jpeg';
+import RTLImage from '../../assets/RTLImage.jpg';
+import DesignVerification from '../../assets/DesignVerification.jpg';
+import DFTImage from '../../assets/Testability.jpg';
+import PhysicalDesignImage from '../../assets/physicalDesign.jpg';
+import PostSilicon from '../../assets/postSilicon.jpg';
 
 const Services = () => {
     const services = [
