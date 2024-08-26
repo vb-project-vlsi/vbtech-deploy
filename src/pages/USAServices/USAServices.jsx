@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './USAServices.module.css';
-import RTLImage from '../../assets/RTLImage.jpeg';
-import DesignVerification from '../../assets/DesignVerification.jpeg';
-import DFTImage from '../../assets/Testability.jpeg';
-import PhysicalDesignImage from '../../assets/physicalDesign.jpeg';
-import PostSilicon from '../../assets/postSilicon.jpeg';
+import RTLImage from '../../assets/RTLImage.jpg';
+import DesignVerification from '../../assets/DesignVerification.jpg';
+import DFTImage from '../../assets/Testability.jpg';
+import PhysicalDesignImage from '../../assets/physicalDesign.jpg';
+import PostSilicon from '../../assets/postSilicon.jpg';
 import Button from '../../components/Button/Button';
 
 const services = [
