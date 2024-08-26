@@ -41,11 +41,10 @@
 .contactInfo {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
 }
 
 .icon {
-  font-size: 24px;
+  font-size: 18px;
   color: #333;
 }
 
@@ -84,6 +83,13 @@
 
 .linkedin {
   color: #0077B5;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #f6f4f3; /* Optional: Customize the color */
+  text-decoration-thickness: 1px; /* Optional: Customize the thickness */
+  text-underline-offset: 4px; /* Optional: Adjust the offset */
 }
 
 /* Responsive adjustments */
@@ -157,7 +163,7 @@
 .addressContainer {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 2px;
 }
 
 @media (max-width: 800px) {
@@ -169,7 +175,7 @@
 .infoItem {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 5px 0;
   flex: 1; /* Ensure the items can grow and shrink */
 }
 

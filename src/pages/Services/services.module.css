@@ -28,24 +28,29 @@
 }
 
 .servicesWrapper {
-    display: flex;
-    transition: transform 1s ease-in-out;
-    width: 100%;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    max-width: 100%;
+    -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer and Edge */
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+.servicesWrapper::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+    max-width: 100%;
 }
 
 .services {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 20px;
-    overflow: hidden;
-    flex-wrap: wrap; /* Wraps services on smaller screens */
+    flex-wrap: nowrap; /* Prevent wrapping, forcing the items to be in a single line */
+    gap: 20px; /* Space between the cards */
 }
 
 .serviceCard {
-    flex: 0 1 calc(33.33% - 20px); /* Responsive width with gap */
-    height: auto;
+    flex: 0 0 auto; /* Keep each card's width fixed */
+    width: 250px; /* Set a specific width for each card */
+    height: 350px; /* Maintain the height */
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -129,3 +134,5 @@
     display: block;
     font-style: oblique;
 }
+
+

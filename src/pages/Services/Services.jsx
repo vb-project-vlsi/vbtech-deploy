@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Text from '../../components/Text/Text';
 import Card from '../../components/Card/Card';
 import Dialog from '../../components/Dialog/Dialog'; // Adjust the import path accordingly
@@ -120,6 +120,7 @@ const Services = () => {
     
     const [dialogContent, setDialogContent] = useState(null);
     const [dialogSideContent, setDialogSideContent] = useState(null);
+    const servicesWrapperRef = useRef(null);
 
     const handleReadMore = (content, sideContent) => {
         setDialogContent(content);
@@ -137,7 +138,7 @@ const Services = () => {
                 <h1 className={styles.heading}>
                     The Services We Offer
                 </h1>
-                <div className={styles.servicesWrapper}>
+                <div className={styles.servicesWrapper} ref={servicesWrapperRef}>
                     <div className={styles.services}>
                         {services.map((service, index) => (
                             <Card 
