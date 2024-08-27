@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './homePage.module.css';
-import BackgroundGif from '../../assets/videoplayback.gif'; // Path to your GIF file
+import BackgroundGif from '../../assets/videoplaybackfinal.gif'; // Path to your GIF file
 
 const HomePage = () => {
   return (
