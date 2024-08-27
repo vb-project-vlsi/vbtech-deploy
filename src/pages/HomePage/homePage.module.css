@@ -6,8 +6,8 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* Background video styling */
-.backgroundVideo {
+/* Background GIF styling */
+.backgroundGif {
   position: absolute;
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
   z-index: -2;
 }
 
-/* Overlay on top of the video */
+/* Overlay on top of the GIF */
 .overlay {
   position: absolute;
   top: 0;
