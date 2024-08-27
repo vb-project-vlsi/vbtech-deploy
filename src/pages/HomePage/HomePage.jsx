@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <div className={styles.homePage}>
       <video className={styles.backgroundVideo} autoPlay muted loop>
-        <source src={BackgroundVideo} type="video/mp4/webm" />
+        <source src={BackgroundVideo} type="video/webm" /> {/* Corrected type */}
         Your browser does not support the video tag.
       </video>
       <div className={styles.overlay}></div>
